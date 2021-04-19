@@ -19,7 +19,7 @@ bool isDate(String source, [String format = 'y-M-d']) {
 /// @param DateTime? comparison 比較対象
 /// @param String format 日付書式(default=y-M-d)
 /// @return bool true is before, false is not before
-bool isBefore(String source, [DateTime? comparison, String format = 'y-M-d']) {
+bool isBefore(String source, [DateTime? comparison, String? format = 'y-M-d']) {
   if (!isDate(source)) {
     return false;
   }
